@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#ffffff">
+
+
+
+    <FrameLayout
+        android:id="@+id/contactImageLayout"
+        android:layout_width="60dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="30dp"
+        android:layout_centerVertical="true">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/contactImage"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:src="#ffffff"
+            android:layout_gravity="center"
+            android:transitionName="contactSharedImage"
+            android:elevation="5dp" />
+
+        <TextView
+            android:id="@+id/nameLetter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="26sp"
+            android:textColor="@color/colorPrimaryDark"
+            android:transitionName="contactSharedName"
+            android:elevation="5dp"
+            />
+
+    </FrameLayout>
+
+
+
+    <TextView
+        android:id="@+id/contactName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/contactImageLayout"
+        android:layout_alignTop="@id/contactImageLayout"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="3dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#212121"
+        android:elevation="5dp"/>
+
+    <TextView
+        android:id="@+id/contactNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/contactName"
+        android:layout_toEndOf="@id/contactImageLayout"
+        android:layout_marginStart="40dp"
+        android:textSize="14sp"
+        android:layout_marginTop="5dp"
+        android:textColor="#85BEB5"
+        android:layout_alignBaseline="@id/contactImageLayout" />
+
+
+</RelativeLayout>
