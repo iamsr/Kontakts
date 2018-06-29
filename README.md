@@ -1,9 +1,8 @@
 
 <p align="center">
-<img src="Screenshots/Trail2.jpeg" height="400" align="center" >
+<img src="Screenshots/Trail2.jpeg" height="450" align="center" >
 </p>
 
-<br/>
 <br/>
 
 # Description
